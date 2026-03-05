@@ -1195,7 +1195,7 @@ def caregiver_patient_location(patient_id):
         patient_id=patient_id,
         patient_name="Patient Name Here",
         location=location,
-        google_maps_api_key="your_actual_key"
+        google_maps_api_key="AIzaSyAzfJHU7mKkVKW9nTVPymNY-0emhlP-0DQ&v=3.21.5a"
     )
 
 @app.route('/api/patient/<int:patient_id>/location')
@@ -1267,4 +1267,3 @@ if __name__=="__main__":
     scheduler.add_job(func=check_reminders, trigger="interval", minutes=1)
     scheduler.start()
     app.run(debug=False)
-
